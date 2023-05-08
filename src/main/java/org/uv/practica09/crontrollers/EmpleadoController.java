@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmpleadoController {
     
     @Autowired
-    private repositoryempleado repositoryempleado;
+    private RepositoryEmpleado repositoryempleado;
     
     @GetMapping("/msg")
     public String holamundo(){
@@ -92,7 +92,7 @@ public class EmpleadoController {
     //delete
     @DeleteMapping("/empleados")
     public void borrarEmpleado(@PathVariable("id") Long id){
-     return;
+    return;
     }
   
   
